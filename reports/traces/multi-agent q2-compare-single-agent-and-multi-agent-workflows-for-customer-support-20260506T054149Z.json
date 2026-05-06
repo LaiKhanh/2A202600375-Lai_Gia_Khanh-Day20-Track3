@@ -1,0 +1,296 @@
+{
+  "run_name": "multi-agent q2",
+  "query": "Compare single-agent and multi-agent workflows for customer support",
+  "latency_seconds": 0.008855300024151802,
+  "route_history": [
+    "researcher",
+    "analyst",
+    "writer",
+    "critic",
+    "done"
+  ],
+  "errors": [],
+  "research_notes": "Research memo for: Compare single-agent and multi-agent workflows for customer support\n\nKey sources:\n- [1] [1] Overview of Compare single-agent and multi-agent workflows for customer support: Background material for Compare single-agent and multi-agent workflows for customer support with emphasis on Compare, single-agent,...\n- [2] [2] Trade-offs in Compare single-agent and multi-agent workflows for customer support: A synthesized comparison of the benefits, constraints, and implementation trade-offs related to Compare single-agent and multi-agent...\n- [3] [3] Guardrails for Compare single-agent and multi-agent workflows for customer support: Practical guardrails for Compare single-agent and multi-agent workflows for customer support, including verification, citations, and...\n- [4] [4] Current patterns for Compare single-agent and multi-agent workflows for customer support: Common patterns, evaluation considerations, and operating notes that help interpret Compare single-agent and multi-agent workflows for...\n\nSynthesis:\n- The request focuses on Compare single-agent and multi-agent workflows for customer support and benefits from evidence-backed comparison.\n- Prioritize direct sources, clear claims, and any trade-offs or guardrails mentioned in the evidence.",
+  "analysis_notes": "Analysis for: Compare single-agent and multi-agent workflows for customer support\n\nKey claims:\n- Research memo for: Compare single-agent and multi-agent workflows for customer support\n\nViewpoints:\n- The evidence suggests Compare single-agent and multi-agent workflows for customer support should be evaluated by usefulness, reliability, and implementation cost.\n- Stronger sources are those that name concrete mechanisms, constraints, and measurable outcomes.\n\nEvidence gaps:\n- [1] Overview of Compare single-agent and multi-agent workflows for customer support: Background material for Compare single-agent and multi-agent workflows for customer support with emphasis on Compare,...\n- [2] Trade-offs in Compare single-agent and multi-agent workflows for customer support: A synthesized comparison of the benefits, constraints, and implementation trade-offs related to Compare single-agent...\n- [3] Guardrails for Compare single-agent and multi-agent workflows for customer support: Practical guardrails for Compare single-agent and multi-agent workflows for customer support, including verification,...",
+  "final_answer": "Answer to: Compare single-agent and multi-agent workflows for customer support\n\nAnalysis for: Compare single-agent and multi-agent workflows for customer support\n\nReferences:\n- [1] [1] Overview of Compare single-agent and multi-agent workflows for customer support\n- [2] [2] Trade-offs in Compare single-agent and multi-agent workflows for customer support\n- [3] [3] Guardrails for Compare single-agent and multi-agent workflows for customer support\n- [4] [4] Current patterns for Compare single-agent and multi-agent workflows for customer support",
+  "sources": [
+    {
+      "title": "Overview of Compare single-agent and multi-agent workflows for customer support",
+      "url": null,
+      "snippet": "Background material for Compare single-agent and multi-agent workflows for customer support with emphasis on Compare, single-agent, multi-agent and the main concepts involved.",
+      "metadata": {
+        "provider": "local",
+        "rank": 1
+      }
+    },
+    {
+      "title": "Trade-offs in Compare single-agent and multi-agent workflows for customer support",
+      "url": null,
+      "snippet": "A synthesized comparison of the benefits, constraints, and implementation trade-offs related to Compare single-agent and multi-agent workflows for customer support.",
+      "metadata": {
+        "provider": "local",
+        "rank": 2
+      }
+    },
+    {
+      "title": "Guardrails for Compare single-agent and multi-agent workflows for customer support",
+      "url": null,
+      "snippet": "Practical guardrails for Compare single-agent and multi-agent workflows for customer support, including verification, citations, and failure-mode analysis.",
+      "metadata": {
+        "provider": "local",
+        "rank": 3
+      }
+    },
+    {
+      "title": "Current patterns for Compare single-agent and multi-agent workflows for customer support",
+      "url": null,
+      "snippet": "Common patterns, evaluation considerations, and operating notes that help interpret Compare single-agent and multi-agent workflows for customer support responsibly.",
+      "metadata": {
+        "provider": "local",
+        "rank": 4
+      }
+    }
+  ],
+  "trace": [
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "next": "researcher",
+        "iteration": 1,
+        "has_sources": false,
+        "has_analysis": false,
+        "has_final_answer": false,
+        "errors": 0
+      }
+    },
+    {
+      "name": "workflow.supervisor",
+      "payload": {
+        "name": "workflow.supervisor",
+        "attributes": {
+          "iteration": 0
+        },
+        "duration_seconds": 0.00026359991170465946,
+        "status": "ok",
+        "error": null
+      }
+    },
+    {
+      "name": "researcher.run",
+      "payload": {
+        "query": "Compare single-agent and multi-agent workflows for customer support",
+        "source_count": 4
+      }
+    },
+    {
+      "name": "workflow.agent",
+      "payload": {
+        "name": "workflow.agent",
+        "attributes": {
+          "route": "researcher"
+        },
+        "duration_seconds": 0.0022668999154120684,
+        "status": "ok",
+        "error": null
+      }
+    },
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "next": "analyst",
+        "iteration": 2,
+        "has_sources": true,
+        "has_analysis": false,
+        "has_final_answer": false,
+        "errors": 0
+      }
+    },
+    {
+      "name": "workflow.supervisor",
+      "payload": {
+        "name": "workflow.supervisor",
+        "attributes": {
+          "iteration": 1
+        },
+        "duration_seconds": 0.0016714001540094614,
+        "status": "ok",
+        "error": null
+      }
+    },
+    {
+      "name": "analyst.run",
+      "payload": {
+        "query": "Compare single-agent and multi-agent workflows for customer support",
+        "has_research_notes": true
+      }
+    },
+    {
+      "name": "workflow.agent",
+      "payload": {
+        "name": "workflow.agent",
+        "attributes": {
+          "route": "analyst"
+        },
+        "duration_seconds": 0.0026263000909239054,
+        "status": "ok",
+        "error": null
+      }
+    },
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "next": "writer",
+        "iteration": 3,
+        "has_sources": true,
+        "has_analysis": true,
+        "has_final_answer": false,
+        "errors": 0
+      }
+    },
+    {
+      "name": "workflow.supervisor",
+      "payload": {
+        "name": "workflow.supervisor",
+        "attributes": {
+          "iteration": 2
+        },
+        "duration_seconds": 0.0003331999760121107,
+        "status": "ok",
+        "error": null
+      }
+    },
+    {
+      "name": "writer.run",
+      "payload": {
+        "query": "Compare single-agent and multi-agent workflows for customer support",
+        "source_count": 4
+      }
+    },
+    {
+      "name": "workflow.agent",
+      "payload": {
+        "name": "workflow.agent",
+        "attributes": {
+          "route": "writer"
+        },
+        "duration_seconds": 0.0005991000216454268,
+        "status": "ok",
+        "error": null
+      }
+    },
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "next": "critic",
+        "iteration": 4,
+        "has_sources": true,
+        "has_analysis": true,
+        "has_final_answer": true,
+        "errors": 0
+      }
+    },
+    {
+      "name": "workflow.supervisor",
+      "payload": {
+        "name": "workflow.supervisor",
+        "attributes": {
+          "iteration": 3
+        },
+        "duration_seconds": 0.00030349986627697945,
+        "status": "ok",
+        "error": null
+      }
+    },
+    {
+      "name": "critic.run",
+      "payload": {
+        "query": "Compare single-agent and multi-agent workflows for customer support",
+        "issues": [],
+        "cited_sources": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "name": "workflow.agent",
+      "payload": {
+        "name": "workflow.agent",
+        "attributes": {
+          "route": "critic"
+        },
+        "duration_seconds": 0.00037789996713399887,
+        "status": "ok",
+        "error": null
+      }
+    },
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "next": "done",
+        "iteration": 5,
+        "has_sources": true,
+        "has_analysis": true,
+        "has_final_answer": true,
+        "errors": 0
+      }
+    },
+    {
+      "name": "workflow.supervisor",
+      "payload": {
+        "name": "workflow.supervisor",
+        "attributes": {
+          "iteration": 4
+        },
+        "duration_seconds": 0.00018289987929165363,
+        "status": "ok",
+        "error": null
+      }
+    }
+  ],
+  "agent_results": [
+    {
+      "agent": "researcher",
+      "content": "Research memo for: Compare single-agent and multi-agent workflows for customer support\n\nKey sources:\n- [1] [1] Overview of Compare single-agent and multi-agent workflows for customer support: Background material for Compare single-agent and multi-agent workflows for customer support with emphasis on Compare, single-agent,...\n- [2] [2] Trade-offs in Compare single-agent and multi-agent workflows for customer support: A synthesized comparison of the benefits, constraints, and implementation trade-offs related to Compare single-agent and multi-agent...\n- [3] [3] Guardrails for Compare single-agent and multi-agent workflows for customer support: Practical guardrails for Compare single-agent and multi-agent workflows for customer support, including verification, citations, and...\n- [4] [4] Current patterns for Compare single-agent and multi-agent workflows for customer support: Common patterns, evaluation considerations, and operating notes that help interpret Compare single-agent and multi-agent workflows for...\n\nSynthesis:\n- The request focuses on Compare single-agent and multi-agent workflows for customer support and benefits from evidence-backed comparison.\n- Prioritize direct sources, clear claims, and any trade-offs or guardrails mentioned in the evidence.",
+      "metadata": {
+        "source_count": 4,
+        "titles": [
+          "Overview of Compare single-agent and multi-agent workflows for customer support",
+          "Trade-offs in Compare single-agent and multi-agent workflows for customer support",
+          "Guardrails for Compare single-agent and multi-agent workflows for customer support",
+          "Current patterns for Compare single-agent and multi-agent workflows for customer support"
+        ]
+      }
+    },
+    {
+      "agent": "analyst",
+      "content": "Analysis for: Compare single-agent and multi-agent workflows for customer support\n\nKey claims:\n- Research memo for: Compare single-agent and multi-agent workflows for customer support\n\nViewpoints:\n- The evidence suggests Compare single-agent and multi-agent workflows for customer support should be evaluated by usefulness, reliability, and implementation cost.\n- Stronger sources are those that name concrete mechanisms, constraints, and measurable outcomes.\n\nEvidence gaps:\n- [1] Overview of Compare single-agent and multi-agent workflows for customer support: Background material for Compare single-agent and multi-agent workflows for customer support with emphasis on Compare,...\n- [2] Trade-offs in Compare single-agent and multi-agent workflows for customer support: A synthesized comparison of the benefits, constraints, and implementation trade-offs related to Compare single-agent...\n- [3] Guardrails for Compare single-agent and multi-agent workflows for customer support: Practical guardrails for Compare single-agent and multi-agent workflows for customer support, including verification,...",
+      "metadata": {
+        "has_research_notes": true,
+        "source_count": 4
+      }
+    },
+    {
+      "agent": "writer",
+      "content": "Answer to: Compare single-agent and multi-agent workflows for customer support\n\nAnalysis for: Compare single-agent and multi-agent workflows for customer support\n\nReferences:\n- [1] [1] Overview of Compare single-agent and multi-agent workflows for customer support\n- [2] [2] Trade-offs in Compare single-agent and multi-agent workflows for customer support\n- [3] [3] Guardrails for Compare single-agent and multi-agent workflows for customer support\n- [4] [4] Current patterns for Compare single-agent and multi-agent workflows for customer support",
+      "metadata": {
+        "source_count": 4
+      }
+    },
+    {
+      "agent": "critic",
+      "content": "Critic review for: Compare single-agent and multi-agent workflows for customer support\n\n- No major issues detected in the current answer.\n- Check for unsupported claims and keep the conclusion aligned with the evidence set.",
+      "metadata": {
+        "issue_count": 0,
+        "cited_sources": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  ]
+}

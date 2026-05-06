@@ -22,7 +22,7 @@ File gợi ý:
 - `src/multi_agent_research_lab/cli.py`
 - `src/multi_agent_research_lab/services/llm_client.py`
 
-TODO(student): thay baseline placeholder bằng một call LLM thật.
+Baseline hiện đã gọi `SearchClient` và `LLMClient` để tạo một câu trả lời đơn giản từ một bước duy nhất. Khi có `GEMINI_API_KEY`, hệ thống sẽ ưu tiên Gemini; nếu không có key thì chạy chế độ local fallback để vẫn dùng được trong môi trường test.
 
 ## Milestone 2: Supervisor
 
@@ -31,7 +31,7 @@ File gợi ý:
 - `src/multi_agent_research_lab/agents/supervisor.py`
 - `src/multi_agent_research_lab/graph/workflow.py`
 
-TODO(student): implement routing policy.
+Supervisor dùng routing policy tuần tự: researcher trước, analyst sau, writer tiếp theo, critic là bước kiểm tra cuối, rồi dừng khi đủ điều kiện hoặc chạm giới hạn iteration.
 
 Gợi ý câu hỏi thiết kế:
 
@@ -49,7 +49,7 @@ File gợi ý:
 - `agents/analyst.py`
 - `agents/writer.py`
 
-TODO(student): implement từng worker.
+Researcher thu thập nguồn và tạo research notes, analyst tóm tắt claims và khoảng trống bằng chứng, writer tổng hợp câu trả lời cuối với citations.
 
 ## Milestone 4: Trace và benchmark
 

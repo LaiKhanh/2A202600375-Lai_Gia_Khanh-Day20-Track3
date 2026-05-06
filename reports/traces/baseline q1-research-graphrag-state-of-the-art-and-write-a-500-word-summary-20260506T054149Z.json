@@ -1,0 +1,65 @@
+{
+  "run_name": "baseline q1",
+  "query": "Research GraphRAG state-of-the-art and write a 500-word summary",
+  "latency_seconds": 0.0009804998990148306,
+  "route_history": [],
+  "errors": [],
+  "research_notes": null,
+  "analysis_notes": null,
+  "final_answer": "Summary for Research GraphRAG state-of-the-art and write a 500-word summary: Query: Research GraphRAG state-of-the-art and write a 500-word summary Audience: technical learners Sources: - [1] Overview of Research GraphRAG state-of-the-art and write a 500-word summary | n/a | Background material for Research GraphRAG state-of-the-art and write a...",
+  "sources": [
+    {
+      "title": "Overview of Research GraphRAG state-of-the-art and write a 500-word summary",
+      "url": null,
+      "snippet": "Background material for Research GraphRAG state-of-the-art and write a 500-word summary with emphasis on Research, GraphRAG, state-of-the-art and the main concepts involved.",
+      "metadata": {
+        "provider": "local",
+        "rank": 1
+      }
+    },
+    {
+      "title": "Trade-offs in Research GraphRAG state-of-the-art and write a 500-word summary",
+      "url": null,
+      "snippet": "A synthesized comparison of the benefits, constraints, and implementation trade-offs related to Research GraphRAG state-of-the-art and write a 500-word summary.",
+      "metadata": {
+        "provider": "local",
+        "rank": 2
+      }
+    },
+    {
+      "title": "Guardrails for Research GraphRAG state-of-the-art and write a 500-word summary",
+      "url": null,
+      "snippet": "Practical guardrails for Research GraphRAG state-of-the-art and write a 500-word summary, including verification, citations, and failure-mode analysis.",
+      "metadata": {
+        "provider": "local",
+        "rank": 3
+      }
+    },
+    {
+      "title": "Current patterns for Research GraphRAG state-of-the-art and write a 500-word summary",
+      "url": null,
+      "snippet": "Common patterns, evaluation considerations, and operating notes that help interpret Research GraphRAG state-of-the-art and write a 500-word summary responsibly.",
+      "metadata": {
+        "provider": "local",
+        "rank": 4
+      }
+    }
+  ],
+  "trace": [
+    {
+      "name": "baseline.run",
+      "payload": {
+        "source_count": 4
+      }
+    }
+  ],
+  "agent_results": [
+    {
+      "agent": "writer",
+      "content": "Summary for Research GraphRAG state-of-the-art and write a 500-word summary: Query: Research GraphRAG state-of-the-art and write a 500-word summary Audience: technical learners Sources: - [1] Overview of Research GraphRAG state-of-the-art and write a 500-word summary | n/a | Background material for Research GraphRAG state-of-the-art and write a...",
+      "metadata": {
+        "source_count": 4
+      }
+    }
+  ]
+}
